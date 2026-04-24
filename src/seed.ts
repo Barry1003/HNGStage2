@@ -1,11 +1,9 @@
 import "dotenv/config";
-import { PrismaClient } from "@prisma/client";
+import prisma from "./lib/prisma";
 import { uuidv7 } from "uuidv7";
 import { getAgeGroup } from "./lib/classify";
 import { getCountryName } from "./lib/external";
 import fs from "fs";
-
-const prisma = new PrismaClient();
 
 async function main() {
   const raw = fs.readFileSync("profiles.json", "utf-8");
