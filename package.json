@@ -27,12 +27,5 @@
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@prisma/engines",
-      "prisma"
-    ]
-  },
-  "packageManager": "pnpm@9.0.0"
-
+  "packageManager": "yarn@1.22.0"
 }
